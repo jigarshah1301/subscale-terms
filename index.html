@@ -1,253 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SubScale - Terms of Service</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service - SubScale</title>
+ 
     <style>
+
+        :root {
+
+            --primary: #2563eb;
+
+            --text: #1f2937;
+
+            --text-light: #4b5563;
+
+            --border: #e5e7eb;
+
+            --background: #ffffff;
+
+            --toc-bg: #f8fafc;
+
+        }
+ 
         * {
+
             margin: 0;
+
             padding: 0;
+
             box-sizing: border-box;
-        }
 
+        }
+ 
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+ 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-            background: #f5f7fa;
-            color: #1f2937;
+
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+            background: var(--background);
+
+            color: var(--text);
+
             line-height: 1.7;
-        }
 
+        }
+ 
         .container {
+
             max-width: 900px;
-            margin: 50px auto;
-            background: #ffffff;
-            padding: 50px;
-            border-radius: 16px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-        }
 
+            margin: 0 auto;
+
+            padding: 40px 24px;
+
+        }
+ 
         h1 {
-            font-size: 2.2rem;
-            margin-bottom: 10px;
-            color: #111827;
-        }
 
+            font-size: 2.25rem;
+
+            margin-bottom: 10px;
+
+            color: var(--text);
+
+        }
+ 
         .updated {
-            color: #6b7280;
-            margin-bottom: 35px;
-            font-style: italic;
-        }
 
-        h2 {
-            margin-top: 35px;
-            margin-bottom: 15px;
-            color: #111827;
-            font-size: 1.4rem;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 8px;
-        }
+            color: var(--text-light);
 
+            margin-bottom: 30px;
+
+        }
+ 
         p {
-            margin-bottom: 16px;
-        }
 
-        ul {
-            margin: 15px 0 20px 25px;
-        }
+            margin-bottom: 18px;
 
-        li {
+        }
+ 
+        .toc {
+
+            background: var(--toc-bg);
+
+            border: 1px solid var(--border);
+
+            border-radius: 12px;
+
+            padding: 24px;
+
+            margin: 40px 0;
+
+        }
+ 
+        .toc h2 {
+
+            margin-bottom: 15px;
+
+            font-size: 1.4rem;
+
+        }
+ 
+        .toc ul {
+
+            list-style: none;
+
+            padding-left: 0;
+
+        }
+ 
+        .toc li {
+
             margin-bottom: 10px;
-        }
 
-        strong {
-            color: #111827;
         }
+ 
+        .toc a {
 
-        .contact {
-            background: #f9fafb;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 15px;
-        }
-
-        a {
-            color: #2563eb;
             text-decoration: none;
-        }
 
-        a:hover {
+            color: var(--primary);
+
+        }
+ 
+        .toc a:hover {
+
             text-decoration: underline;
-        }
 
+        }
+ 
+        section {
+
+            margin-top: 55px;
+
+            scroll-margin-top: 20px;
+
+        }
+ 
+        h2 {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 18px;
+
+            color: var(--text);
+
+        }
+ 
+        ul {
+
+            padding-left: 24px;
+
+            margin-bottom: 18px;
+
+        }
+ 
+        li {
+
+            margin-bottom: 8px;
+
+        }
+ 
+        .back-top {
+
+            display: inline-block;
+
+            margin-top: 20px;
+
+            text-decoration: none;
+
+            color: var(--primary);
+
+            font-size: 0.95rem;
+
+        }
+ 
+        .back-top:hover {
+
+            text-decoration: underline;
+
+        }
+ 
+        footer {
+
+            margin-top: 80px;
+
+            padding-top: 30px;
+
+            border-top: 1px solid var(--border);
+
+            text-align: center;
+
+            color: var(--text-light);
+
+        }
+ 
         @media (max-width: 768px) {
+
             .container {
-                margin: 20px;
-                padding: 25px;
-            }
 
+                padding: 24px 18px;
+
+            }
+ 
             h1 {
-                font-size: 1.8rem;
-            }
 
+                font-size: 1.9rem;
+
+            }
+ 
             h2 {
-                font-size: 1.2rem;
+
+                font-size: 1.3rem;
+
             }
+
         }
-    </style>
+</style>
 </head>
+ 
 <body>
-
-<div class="container">
-
+ 
+<div class="container" id="top">
+ 
     <h1>Terms of Service - SubScale</h1>
-
+ 
     <p class="updated"><strong>Last Updated:</strong> June 20, 2026</p>
-
+ 
     <p>
-        These Terms of Service ("Terms") govern your use of the SubScale mobile application
-        ("the App"). By downloading, installing, accessing, or using SubScale, you agree to
-        be bound by these Terms. If you do not agree to these terms, do not use the App.
-    </p>
 
-    <h2>1. Description of Service</h2>
+        These Terms of Service ("Terms") govern your use of the SubScale mobile application ("the App").
 
-    <p>
-        SubScale is an independent, informational subscription management tool designed
-        to help users track their ongoing subscriptions and recurring expenses.
-    </p>
+        By downloading, installing, accessing, or using SubScale, you agree to be bound by these Terms.
 
-    <ul>
-        <li><strong>No Financial Services:</strong> SubScale does not provide financial, investment, or banking services.</li>
-
-        <li><strong>No Direct Payment Processing:</strong> The App does not connect to bank accounts,
-        credit cards, or financial institutions. You should not enter sensitive financial
-        credentials like raw credit card or bank account numbers into the App. All tracking
-        details are manually entered by you.</li>
-    </ul>
-
-    <h2>2. Eligibility and Accounts</h2>
-
-    <ul>
-        <li><strong>Age Requirement:</strong> You must be at least 13 years old (or the minimum legal age in your country) to use SubScale.</li>
-
-        <li><strong>Local Identity:</strong> SubScale operates entirely without requiring account registration,
-        external logins, or cloud profiles. You are solely responsible for managing the App
-        on your local device.</li>
-    </ul>
-
-    <h2>3. Free and Premium Tiers</h2>
-
-    <p>
-        As displayed on the Premium Suite layout, SubScale offers both free features and an optional paid Premium tier:
-    </p>
-
-    <ul>
-        <li><strong>Free Version:</strong> Includes standard Subscription and expense details and summary, basic reminder alerts and is limited to a maximum of 10 tracked subscriptions.</li>
-
-        <li><strong>Premium Suite Option:</strong> Unlocks unlimited subscription tracking, advanced smart calendar views, custom Excel/PDF data exporting, advanced analytics, and a local backup & restore utility along with managing, monitoring and cancelling your subscriptions and expenses.</li>
-    </ul>
-
-    <h2>4. Billing, Auto-Renewals, and Restorations</h2>
-
-    <ul>
-        <li><strong>Subscription Plans:</strong> Premium access is offered via Monthly (₹149), Quarterly (₹299), and Yearly (₹999) billing options. Regional pricing may vary based on your respective app store location.</li>
-
-        <li><strong>App Store Processing:</strong> All payment processing, currency conversions, billing transactions, and renewals are handled exclusively by the Apple App Store or Google Play Store billing architectures. SubScale does not collect or track your payment methods.</li>
-
-        <li><strong>Automatic Renewal:</strong> Paid tiers automatically renew at the end of each billing cycle unless you disable auto-renew or cancel your subscription through your official App Store or Google Play account settings at least 24 hours before the renewal date.</li>
-
-        <li><strong>Purchases Restoration:</strong> If you reinstall the App or switch devices, you can utilize the integrated "Restore Purchases" button on the paywall layout to re-verify your active premium tier entitlements via your device's primary store account.</li>
-    </ul>
-
-    <h2>5. Data Ownership and Local Storage</h2>
-
-    <ul>
-        <li><strong>Local Device Storage:</strong> Every piece of data you enter, including subscription titles, costs, dates, and category items & notes etc. is stored exclusively in your device's secure local internal storage database.</li>
-
-        <li><strong>Your Responsibility:</strong> Because your data is not stored on or backed up to external cloud databases, you acknowledge that deleting the App, clearing local app data, or losing your physical device will permanently erase your local data logs.</li>
-    </ul>
-
-    <h2>6. User Responsibilities</h2>
-
-    <p>You agree to:</p>
-
-    <ul>
-        <li>Provide accurate subscription information</li>
-        <li>Maintain the security of your data</li>
-        <li>Not use the app for any illegal purposes</li>
-        <li>Not attempt to access restricted features without premium subscription</li>
-    </ul>
-
-    <h2>7. Intellectual Property & Trademarks</h2>
-
-    <ul>
-        <li><strong>Ownership:</strong> SubScale and its original code base, design layouts, SubScale brand logo and mascot ‘Savey’ and features are owned exclusively by the App developer and are protected by applicable copyright and trademark laws.</li>
-
-        <li><strong>Fair Use Disclaimer:</strong> SubScale utilizes third-party corporate names, logos, and trademarks solely for user-facing visual identification of subscription categories. SubScale is a completely independent tool and is not affiliated with, endorsed by, or sponsored by any of the companies whose corporate logos appear within the application interface.</li>
-    </ul>
-
-    <h2>8. App Alerts and Permissions</h2>
-
-    <ul>
-        <li><strong>Local Notifications:</strong> To receive timely "Renewal Alerts" for your tracked subscriptions & inactivity alerts, the App requires your local device permission to push notifications. These alerts are handled entirely on-device without external server dependency, and can be disabled at any time through our app SubScale and your operating system settings.</li>
-    </ul>
-
-    <h2>9. Refund Policy</h2>
-
-    <p>
-        Refund requests for any premium plan purchases must be initiated directly through the respective platform (Apple App Store or Google Play Store) according to their consumer refund guidelines. SubScale does not process or manage financial refunds.
-    </p>
-
-    <h2>10. Disclaimer of Warranties</h2>
-
-    <p>
-        SubScale is provided on an "as is" and "as available" basis without warranties of any kind, either express or implied. We do not guarantee that the App will be entirely error-free, uninterrupted, or that the manual tracking calculations will fit your absolute financial planning needs.
-    </p>
-
-    <h2>11. Limitation of Liability</h2>
-
-    <p>
-        To the maximum extent permitted by applicable law, SubScale and its developer shall not be liable for any indirect, incidental, consequential, special, or punitive damages, including but not limited to loss of data, personal budget discrepancies, financial tracking mistakes, or device failures, arising out of your use or inability to use the application.
-    </p>
-
-    <h2>12. Termination</h2>
-
-    <p>
-        <strong>SubScale</strong> - We reserve the right to modify, suspend, discontinue, or terminate the App or any part of the Service at any time without liability.
-    </p>
-
-    <p>
-        <strong>User</strong> - You can terminate this legal agreement at any time by simply uninstalling the application and wiping its local storage footprint. We reserve the right to suspend access to features if any fraudulent manipulation of the App Store billing layer is detected.
-    </p>
-
-    <h2>13. Governing Law</h2>
-
-    <p>
-        These Terms are governed by and construed in accordance with the laws of your primary place of residence.
-    </p>
-
-    <h2>14. Changes to Terms</h2>
-
-    <p>
-        We reserve the right to modify these terms at any time. We will notify users of any material changes via the App or email.
-    </p>
-
-    <h2>15. Contact Information</h2>
-
-    <div class="contact">
+        If you do not agree to these terms, do not use the App.
+</p>
+ 
+    <nav class="toc">
+<h2>Table of Contents</h2>
+ 
+        <ul>
+<li><a href="#description">1. Description of Service</a></li>
+<li><a href="#eligibility">2. Eligibility and Accounts</a></li>
+<li><a href="#premium">3. Free and Premium Tiers</a></li>
+<li><a href="#billing">4. Billing, Auto-Renewals, and Restorations</a></li>
+<li><a href="#storage">5. Data Ownership and Local Storage</a></li>
+<li><a href="#responsibilities">6. User Responsibilities</a></li>
+<li><a href="#ip">7. Intellectual Property & Trademarks</a></li>
+<li><a href="#alerts">8. App Alerts and Permissions</a></li>
+<li><a href="#refunds">9. Refund Policy</a></li>
+<li><a href="#warranties">10. Disclaimer of Warranties</a></li>
+<li><a href="#liability">11. Limitation of Liability</a></li>
+<li><a href="#termination">12. Termination</a></li>
+<li><a href="#law">13. Governing Law</a></li>
+<li><a href="#changes">14. Changes to Terms</a></li>
+<li><a href="#contact">15. Contact Information</a></li>
+</ul>
+</nav>
+ 
+    <section id="description">
+<h2>1. Description of Service</h2>
+ 
         <p>
+
+            SubScale is an independent, informational subscription management tool designed to help users track their ongoing subscriptions and recurring expenses.
+</p>
+ 
+        <p><strong>No Financial Services:</strong> SubScale does not provide financial, investment, or banking services.</p>
+ 
+        <p><strong>No Direct Payment Processing:</strong> The App does not connect to bank accounts, credit cards, or financial institutions. You should not enter sensitive financial credentials like raw credit card or bank account numbers into the App. All tracking details are manually entered by you.</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="eligibility">
+<h2>2. Eligibility and Accounts</h2>
+ 
+        <p><strong>Age Requirement:</strong> You must be at least 13 years old (or the minimum legal age in your country) to use SubScale.</p>
+ 
+        <p><strong>Local Identity:</strong> SubScale operates entirely without requiring account registration, external logins, or cloud profiles. You are solely responsible for managing the App on your local device.</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="premium">
+<h2>3. Free and Premium Tiers</h2>
+ 
+        <p>
+
+            As displayed on the Premium Suite layout, SubScale offers both free features and an optional paid Premium tier:
+</p>
+ 
+        <p><strong>Free Version:</strong> Includes standard Subscription and expense details and summary, basic reminder alerts and is limited to a maximum of 10 tracked subscriptions.</p>
+ 
+        <p><strong>Premium Suite Option:</strong> Unlocks unlimited subscription tracking, advanced smart calendar views, custom Excel/PDF data exporting, advanced analytics, and a local backup &amp; restore utility along with managing, monitoring and cancelling your subscriptions and expenses.</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="billing">
+<h2>4. Billing, Auto-Renewals, and Restorations</h2>
+ 
+        <p><strong>Subscription Plans:</strong> Premium access is offered via Monthly (₹149), Quarterly (₹299), and Yearly (₹999) billing options. Regional pricing may vary based on your respective app store location.</p>
+ 
+        <p><strong>App Store Processing:</strong> All payment processing, currency conversions, billing transactions, and renewals are handled exclusively by the Apple App Store or Google Play Store billing architectures. SubScale does not collect or track your payment methods.</p>
+ 
+        <p><strong>Automatic Renewal:</strong> Paid tiers automatically renew at the end of each billing cycle unless you disable auto-renew or cancel your subscription through your official App Store or Google Play account settings at least 24 hours before the renewal date.</p>
+ 
+        <p><strong>Purchases Restoration:</strong> If you reinstall the App or switch devices, you can utilize the integrated "Restore Purchases" button on the paywall layout to re-verify your active premium tier entitlements via your device's primary store account.</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="storage">
+<h2>5. Data Ownership and Local Storage</h2>
+ 
+        <p><strong>Local Device Storage:</strong> Every piece of data you enter, including subscription titles, costs, dates, and category items &amp; notes etc. is stored exclusively in your device's secure local internal storage database.</p>
+ 
+        <p><strong>Your Responsibility:</strong> Because your data is not stored on or backed up to external cloud databases, you acknowledge that deleting the App, clearing local app data, or losing your physical device will permanently erase your local data logs.</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="responsibilities">
+<h2>6. User Responsibilities</h2>
+ 
+        <p>You agree to:</p>
+ 
+        <ul>
+<li>Provide accurate subscription information</li>
+<li>Maintain the security of your data</li>
+<li>Not use the app for any illegal purposes</li>
+<li>Not attempt to access restricted features without premium subscription</li>
+</ul>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="ip">
+<h2>7. Intellectual Property &amp; Trademarks</h2>
+ 
+        <p><strong>Ownership:</strong> SubScale and its original code base, design layouts, SubScale brand logo and mascot ‘Savey’ and features are owned exclusively by the App developer and are protected by applicable copyright and trademark laws.</p>
+ 
+        <p><strong>Fair Use Disclaimer:</strong> SubScale utilizes third-party corporate names, logos, and trademarks solely for user-facing visual identification of subscription categories. SubScale is a completely independent tool and is not affiliated with, endorsed by, or sponsored by any of the companies whose corporate logos appear within the application interface.</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="alerts">
+<h2>8. App Alerts and Permissions</h2>
+ 
+        <p><strong>Local Notifications:</strong> To receive timely "Renewal Alerts" for your tracked subscriptions &amp; inactivity alerts, the App requires your local device permission to push notifications. These alerts are handled entirely on-device without external server dependency, and can be disabled at any time through our app SubScale and your operating system settings.</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="refunds">
+<h2>9. Refund Policy</h2>
+ 
+        <p>
+
+            Refund requests for any premium plan purchases must be initiated directly through the respective platform (Apple App Store or Google Play Store) according to their consumer refund guidelines. SubScale does not process or manage financial refunds.
+</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="warranties">
+<h2>10. Disclaimer of Warranties</h2>
+ 
+        <p>
+
+            SubScale is provided on an "as is" and "as available" basis without warranties of any kind, either express or implied. We do not guarantee that the App will be entirely error-free, uninterrupted, or that the manual tracking calculations will fit your absolute financial planning needs.
+</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="liability">
+<h2>11. Limitation of Liability</h2>
+ 
+        <p>
+
+            To the maximum extent permitted by applicable law, SubScale and its developer shall not be liable for any indirect, incidental, consequential, special, or punitive damages, including but not limited to loss of data, personal budget discrepancies, financial tracking mistakes, or device failures, arising out of your use or inability to use the application.
+</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="termination">
+<h2>12. Termination</h2>
+ 
+        <p><strong>SubScale:</strong> We reserve the right to modify, suspend, discontinue, or terminate the App or any part of the Service at any time without liability.</p>
+ 
+        <p><strong>User:</strong> You can terminate this legal agreement at any time by simply uninstalling the application and wiping its local storage footprint. We reserve the right to suspend access to features if any fraudulent manipulation of the App Store billing layer is detected.</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="law">
+<h2>13. Governing Law</h2>
+ 
+        <p>
+
+            These Terms are governed by and construed in accordance with the laws of your primary place of residence.
+</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="changes">
+<h2>14. Changes to Terms</h2>
+ 
+        <p>
+
+            We reserve the right to modify these terms at any time. We will notify users of any material changes via the App or email.
+</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <section id="contact">
+<h2>15. Contact Information</h2>
+ 
+        <p>
+
             For any questions, operational support, or technical bug reports regarding these Terms of Service, please contact:
-        </p>
-
+</p>
+ 
         <p>
-            <strong>Email:</strong>
-            <a href="mailto:subscalesupport@gmail.com">subscalesupport@gmail.com</a>
-        </p>
-    </div>
 
+            Email: subscalesupport@gmail.com
+</p>
+ 
+        <a href="#top" class="back-top">↑ Back to Top</a>
+</section>
+ 
+    <footer>
+<p>© 2026 SubScale</p>
+</footer>
+ 
 </div>
-
+ 
 </body>
 </html>
+ 
